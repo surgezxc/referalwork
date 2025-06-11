@@ -1,0 +1,168 @@
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    color: #333;
+    background-color: #f9f9f9;
+}
+
+header {
+    background: linear-gradient(135deg, #6e8efb, #4a6cf7);
+    color: white;
+    text-align: center;
+    padding: 2rem 1rem;
+}
+
+h1 {
+    margin: 0;
+    font-size: 2rem;
+}
+
+.btn-3d {
+    display: inline-block;
+    background: linear-gradient(to bottom, #ff6b6b, #ff4757);
+    color: white;
+    padding: 15px 30px;
+    border-radius: 50px;
+    text-decoration: none;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    box-shadow: 0 10px 20px rgba(255,107,107,0.4),
+                inset 0 -3px 0 rgba(0,0,0,0.2);
+    transition: all 0.3s;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .btn-3d:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 15px 25px rgba(255,107,107,0.5);
+  }
+  
+  .btn-3d:active {
+    transform: translateY(1px);
+    box-shadow: 0 5px 10px rgba(255,107,107,0.4);
+  }
+
+  .vacancy {
+    background: white;
+    border-radius: 12px;
+    padding: 2rem;
+    margin-bottom: 2rem;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+    transition: all 0.3s ease;
+    border-left: 4px solid #764ba2;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .vacancy:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+  }
+  
+  .vacancy::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 5px;
+    background: linear-gradient(to right, #667eea, #764ba2);
+  }
+  .vacancy .btn {
+    /* Стили кнопки внутри вакансии */
+    display: inline-block;
+    padding: 15px 30px;
+    background: linear-gradient(to bottom, #ff6b6b, #ff4757);
+    color: white;
+    border-radius: 50px;
+    text-decoration: none;
+    box-shadow: 0 10px 20px rgba(255,107,107,0.4);
+    transition: all 0.3s;
+  }
+  
+  .vacancy .btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 15px 25px rgba(255,107,107,0.5);
+  }
+  .faq {
+    background: #f8f9fa;
+    padding: 3rem 2rem;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .faq::after {
+    content: "";
+    position: absolute;
+    bottom: -50px;
+    right: -50px;
+    width: 200px;
+    height: 200px;
+    background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><path fill="%23667eea" opacity="0.1" d="M30,10 Q50,5 70,30 T90,70 Q95,50 70,30 T10,30 Q5,50 30,70 T30,10"/></svg>');
+    background-size: contain;
+    animation: rotate 30s linear infinite;
+  }
+  
+  @keyframes rotate {
+    from { transform: rotate(0deg); }
+    to { transform: rotate(360deg); }
+  }
+
+footer {
+    text-align: center;
+    padding: 1rem;
+    background: #333;
+    color: white;
+}
+.animated-header {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    padding: 3rem 1rem;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+  }
+  
+  .parallax-dots {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: radial-gradient(rgba(255,255,255,0.3) 1px, transparent 1px);
+    background-size: 20px 20px;
+    animation: parallax 20s linear infinite;
+  }
+  
+  @keyframes parallax {
+    0% { transform: translateY(0); }
+    100% { transform: translateY(-200px); }
+  }
+  .banner-card {
+  padding: 15px;
+  border-radius: 10px;
+  color: white;
+  position: relative;
+  overflow: hidden;
+  margin-bottom: 15px;
+}
+.pulse {
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  background: rgba(255,255,255,0.2);
+  border-radius: 50%;
+  top: -50px;
+  right: -50px;
+  animation: pulse 3s infinite;
+}
+@keyframes pulse {
+  0% { transform: scale(0.5); opacity: 0; }
+  50% { opacity: 0.4; }
+  100% { transform: scale(1.5); opacity: 0; }
+}
