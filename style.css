@@ -17,53 +17,87 @@ header {
 h1 {
     margin: 0;
     font-size: 2rem;
+    font-family: Tahoma, sans-serif;
 }
 
-.btn-3d {
-    display: inline-block;
-    background: linear-gradient(to bottom, #ff6b6b, #ff4757);
-    color: white;
-    padding: 15px 30px;
-    border-radius: 50px;
+.main-nav {
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+    padding: 1rem;
+    background: #fff;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+
+.main-nav a {
+    color: #4a6cf7;
     text-decoration: none;
     font-weight: bold;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-    box-shadow: 0 10px 20px rgba(255,107,107,0.4),
-                inset 0 -3px 0 rgba(0,0,0,0.2);
-    transition: all 0.3s;
-    position: relative;
-    overflow: hidden;
-  }
-  
-  .btn-3d:hover {
-    transform: translateY(-3px);
-    box-shadow: 0 15px 25px rgba(255,107,107,0.5);
-  }
-  
-  .btn-3d:active {
-    transform: translateY(1px);
-    box-shadow: 0 5px 10px rgba(255,107,107,0.4);
-  }
+    transition: color 0.3s;
+}
 
-  .vacancy {
+.main-nav a:hover {
+    color: #764ba2;
+}
+
+main {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 2rem 1rem;
+}
+
+.section-title {
+    text-align: center;
+    margin-bottom: 2rem;
+    color: #4a6cf7;
+}
+
+.section-description {
+    text-align: center;
+    margin: -1rem 0 2rem;
+    color: #666;
+}
+
+.header-content {
+    position: relative;
+    z-index: 1;
+}
+
+.header-logo {
+    display: block;
+    margin: 0 auto 1rem;
+    border-radius: 12px;
+    background: white;
+    padding: 8px;
+}
+
+.header-subtitle {
+    margin: 0.5rem 0 0;
+    opacity: 0.9;
+    font-size: 1.1rem;
+}
+
+.vacancy {
     background: white;
     border-radius: 12px;
     padding: 2rem;
     margin-bottom: 2rem;
-    box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
     transition: all 0.3s ease;
     border-left: 4px solid #764ba2;
     position: relative;
     overflow: hidden;
-  }
-  
-  .vacancy:hover {
+}
+
+.vacancy:hover {
     transform: translateY(-5px);
-    box-shadow: 0 10px 25px rgba(0,0,0,0.1);
-  }
-  
-  .vacancy::before {
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+}
+
+.vacancy::before {
     content: "";
     position: absolute;
     top: 0;
@@ -71,31 +105,115 @@ h1 {
     width: 100%;
     height: 5px;
     background: linear-gradient(to right, #667eea, #764ba2);
-  }
-  .vacancy .btn {
-    /* Стили кнопки внутри вакансии */
+}
+
+.vacancy-logo {
+    float: right;
+    margin-left: 1rem;
+    border-radius: 8px;
+}
+
+.vacancy h3 {
+    margin-top: 0;
+    color: #333;
+}
+
+.vacancy ul {
+    margin: 0.5rem 0 1.5rem;
+    padding-left: 1.5rem;
+}
+
+.vacancy ul li {
+    margin-bottom: 0.25rem;
+}
+
+.vacancy .btn {
     display: inline-block;
     padding: 15px 30px;
     background: linear-gradient(to bottom, #ff6b6b, #ff4757);
     color: white;
     border-radius: 50px;
     text-decoration: none;
-    box-shadow: 0 10px 20px rgba(255,107,107,0.4);
+    box-shadow: 0 10px 20px rgba(255, 107, 107, 0.4);
     transition: all 0.3s;
-  }
-  
-  .vacancy .btn:hover {
+    border: none;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+.vacancy .btn:hover {
     transform: translateY(-3px);
-    box-shadow: 0 15px 25px rgba(255,107,107,0.5);
-  }
-  .faq {
+    box-shadow: 0 15px 25px rgba(255, 107, 107, 0.5);
+}
+
+.application {
+    background: white;
+    border-radius: 12px;
+    padding: 2rem;
+    margin-bottom: 2rem;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+}
+
+.application-form {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.application-form label {
+    font-weight: bold;
+    margin-top: 0.5rem;
+}
+
+.application-form input,
+.application-form select,
+.application-form textarea {
+    padding: 0.75rem 1rem;
+    border: 2px solid #e0e0e0;
+    border-radius: 8px;
+    font-size: 1rem;
+    font-family: inherit;
+    transition: border-color 0.3s;
+}
+
+.application-form input:focus,
+.application-form select:focus,
+.application-form textarea:focus {
+    outline: none;
+    border-color: #4a6cf7;
+}
+
+.application-form .btn {
+    margin-top: 1rem;
+    align-self: flex-start;
+    display: inline-block;
+    padding: 15px 30px;
+    background: linear-gradient(to bottom, #ff6b6b, #ff4757);
+    color: white;
+    border-radius: 50px;
+    text-decoration: none;
+    box-shadow: 0 10px 20px rgba(255, 107, 107, 0.4);
+    transition: all 0.3s;
+    border: none;
+    cursor: pointer;
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+.application-form .btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 15px 25px rgba(255, 107, 107, 0.5);
+}
+
+.faq {
     background: #f8f9fa;
     padding: 3rem 2rem;
     position: relative;
     overflow: hidden;
-  }
-  
-  .faq::after {
+    border-radius: 12px;
+}
+
+.faq::after {
     content: "";
     position: absolute;
     bottom: -50px;
@@ -105,12 +223,31 @@ h1 {
     background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><path fill="%23667eea" opacity="0.1" d="M30,10 Q50,5 70,30 T90,70 Q95,50 70,30 T10,30 Q5,50 30,70 T30,10"/></svg>');
     background-size: contain;
     animation: rotate 30s linear infinite;
-  }
-  
-  @keyframes rotate {
+}
+
+.faq-item {
+    margin-bottom: 1.5rem;
+    position: relative;
+    z-index: 1;
+}
+
+.faq-item h3 {
+    margin-bottom: 0.5rem;
+    color: #4a6cf7;
+}
+
+.faq-item ol {
+    padding-left: 1.5rem;
+}
+
+.faq-item ol li {
+    margin-bottom: 0.25rem;
+}
+
+@keyframes rotate {
     from { transform: rotate(0deg); }
     to { transform: rotate(360deg); }
-  }
+}
 
 footer {
     text-align: center;
@@ -118,6 +255,7 @@ footer {
     background: #333;
     color: white;
 }
+
 .animated-header {
     background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
     color: white;
@@ -125,44 +263,39 @@ footer {
     text-align: center;
     position: relative;
     overflow: hidden;
-    box-shadow: 0 10px 30px rgba(0,0,0,0.2);
-  }
-  
-  .parallax-dots {
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+}
+
+.parallax-dots {
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    background-image: radial-gradient(rgba(255,255,255,0.3) 1px, transparent 1px);
+    background-image: radial-gradient(rgba(255, 255, 255, 0.3) 1px, transparent 1px);
     background-size: 20px 20px;
     animation: parallax 20s linear infinite;
-  }
-  
-  @keyframes parallax {
+}
+
+@keyframes parallax {
     0% { transform: translateY(0); }
     100% { transform: translateY(-200px); }
-  }
-  .banner-card {
-  padding: 15px;
-  border-radius: 10px;
-  color: white;
-  position: relative;
-  overflow: hidden;
-  margin-bottom: 15px;
 }
-.pulse {
-  position: absolute;
-  width: 100px;
-  height: 100px;
-  background: rgba(255,255,255,0.2);
-  border-radius: 50%;
-  top: -50px;
-  right: -50px;
-  animation: pulse 3s infinite;
-}
-@keyframes pulse {
-  0% { transform: scale(0.5); opacity: 0; }
-  50% { opacity: 0.4; }
-  100% { transform: scale(1.5); opacity: 0; }
+
+@media (max-width: 600px) {
+    h1 {
+        font-size: 1.4rem;
+    }
+
+    .main-nav {
+        flex-direction: column;
+        align-items: center;
+        gap: 0.75rem;
+    }
+
+    .vacancy-logo {
+        float: none;
+        display: block;
+        margin: 0 0 1rem;
+    }
 }

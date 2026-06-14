@@ -1,62 +1,170 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
-    <link rel="icon" href="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5d/Tinkoff_Bank_logo.svg/1200px-Tinkoff_Bank_logo.svg.png" type="image/png">
+    <link rel="icon" href="images/tinkoff.svg" type="image/svg+xml">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Реферальная программа трудоустройства в Тинькофф и Яндекс с бонусом до 100 000 ₽">
     <title>Работа в Тинькофф с бонусом до 50 000₽</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-   
+
     <header class="animated-header">
-        <h1 style=" font-family: 'tahoma';">🚀 УСТРОЙТЕСЬ В ТОПОВЫЕ КОМПАНИИ С БОНУСОМ ДО 100 000 Р.</h1>
-        <div class="parallax-dots"></div>
-      </header>
+        <div class="header-content">
+            <img
+                src="images/tinkoff.svg"
+                alt="Логотип Тинькофф Банка"
+                class="header-logo"
+                width="80"
+                height="80"
+            >
+            <h1>🚀 УСТРОЙТЕСЬ В ТОПОВЫЕ КОМПАНИИ С БОНУСОМ ДО 100 000 Р.</h1>
+            <p class="header-subtitle">Официальная партнёрская программа</p>
+        </div>
+        <div class="parallax-dots" aria-hidden="true"></div>
+    </header>
 
-    <section class="vacancies">
-        <div class="vacancy">
-            <h2>Менеджер по продажам</h2>
-            <p><strong>Зарплата:</strong> от 80 000 ₽ + бонус 30 000 ₽</p>
-            <p><strong>Требования:</strong> Опыт от 1 года, коммуникабельность.</p>
-            <a href="https://www.tbank.ru/baf/3A10WdqaFYd" class="btn">Устроиться</a>
-            
-        </div>
-        <div class="vacancy">
-            <h2>Разработчик Python (Яндекс)</h2>
-            <p><strong>Зарплата:</strong> от 180 000₽ + бонус 70 000₽</p>
-            <p><strong>Требования:</strong> Опыт от 3 лет, Django/Flask.</p>
-            <a href="https://www.tbank.ru/baf/3A10WdqaFYd" class="btn">Устроиться</a>
-        </div>
-        <div class="vacancy">
-            <h2>Менеджер по продажам (Тинькофф)</h2>
-            <p><strong>Зарплата:</strong> от 90 000₽ + бонус 40 000₽</p>
-            <p><strong>Требования:</strong> Опыт в продажах от 1 года.</p>
-            <a href="https://www.tbank.ru/baf/3A10WdqaFYd" class="btn">Устроиться</a>
-        </div>
-    
-        <div class="vacancy">
-            <h2>Разработчик Python</h2>
-            <p><strong>Зарплата:</strong> от 150 000 ₽ + бонус 50 000 ₽</p>
-            <p><strong>Требования:</strong> Опыт от 3 лет, знание Django.</p>
-            <a href="https://www.tbank.ru/baf/3A10WdqaFYd" class="btn">Устроиться</a>
-        </div>
-    </section>
+    <nav class="main-nav" aria-label="Навигация по странице">
+        <a href="#vacancies">Вакансии</a>
+        <a href="#application">Заявка</a>
+        <a href="#faq">Вопросы</a>
+    </nav>
 
-    <section class="faq">
-        <h2>❓ Частые вопросы</h2>
-        <div class="faq-item">
-            <h3>Это законно?</h3>
-            <p>Да, это официальная партнёрская программа Тинькофф и Яндекса.</p>
-        </div>
-        <div class="faq-item">
-            <h3>Мне нужно платить?</h3>
-            <p>Нет, бонус выплачивает компания за успешное трудоустройство.</p>
-        </div>
-    </section>
+    <main>
+        <section id="vacancies" class="vacancies">
+            <h2 class="section-title">Открытые вакансии</h2>
+
+            <article class="vacancy">
+                <img
+                    src="images/tinkoff.svg"
+                    alt="Логотип Тинькофф"
+                    class="vacancy-logo"
+                    width="48"
+                    height="48"
+                >
+                <h3>Менеджер по продажам</h3>
+                <p><strong>Зарплата:</strong> от 80 000 ₽ + бонус 30 000 ₽</p>
+                <p><strong>Требования:</strong></p>
+                <ul>
+                    <li>Опыт от 1 года</li>
+                    <li>Коммуникабельность</li>
+                    <li>Умение работать с клиентами</li>
+                </ul>
+                <a href="https://www.tbank.ru/baf/3A10WdqaFYd" class="btn">Устроиться</a>
+            </article>
+
+            <article class="vacancy">
+                <img
+                    src="images/yandex.svg"
+                    alt="Логотип Яндекса"
+                    class="vacancy-logo"
+                    width="48"
+                    height="48"
+                >
+                <h3>Разработчик Python (Яндекс)</h3>
+                <p><strong>Зарплата:</strong> от 180 000 ₽ + бонус 70 000 ₽</p>
+                <p><strong>Требования:</strong></p>
+                <ul>
+                    <li>Опыт от 3 лет</li>
+                    <li>Знание Django или Flask</li>
+                    <li>Опыт работы с REST API</li>
+                </ul>
+                <a href="https://www.tbank.ru/baf/3A10WdqaFYd" class="btn">Устроиться</a>
+            </article>
+
+            <article class="vacancy">
+                <img
+                    src="images/tinkoff.svg"
+                    alt="Логотип Тинькофф"
+                    class="vacancy-logo"
+                    width="48"
+                    height="48"
+                >
+                <h3>Менеджер по продажам (Тинькофф)</h3>
+                <p><strong>Зарплата:</strong> от 90 000 ₽ + бонус 40 000 ₽</p>
+                <p><strong>Требования:</strong></p>
+                <ul>
+                    <li>Опыт в продажах от 1 года</li>
+                    <li>Навыки ведения переговоров</li>
+                    <li>Готовность к удалённой работе</li>
+                </ul>
+                <a href="https://www.tbank.ru/baf/3A10WdqaFYd" class="btn">Устроиться</a>
+            </article>
+
+            <article class="vacancy">
+                <img
+                    src="images/yandex.svg"
+                    alt="Логотип Яндекса"
+                    class="vacancy-logo"
+                    width="48"
+                    height="48"
+                >
+                <h3>Разработчик Python</h3>
+                <p><strong>Зарплата:</strong> от 150 000 ₽ + бонус 50 000 ₽</p>
+                <p><strong>Требования:</strong></p>
+                <ul>
+                    <li>Опыт от 3 лет</li>
+                    <li>Знание Django</li>
+                    <li>Опыт работы с Git</li>
+                </ul>
+                <a href="https://www.tbank.ru/baf/3A10WdqaFYd" class="btn">Устроиться</a>
+            </article>
+        </section>
+
+        <section id="application" class="application">
+            <h2 class="section-title">Оставить заявку</h2>
+            <p class="section-description">Заполните форму — мы свяжемся с вами и подберём подходящую вакансию.</p>
+
+            <form class="application-form" action="#" method="post">
+                <label for="name">Имя</label>
+                <input type="text" id="name" name="name" required placeholder="Ваше имя">
+
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required placeholder="example@mail.ru">
+
+                <label for="vacancy-select">Вакансия</label>
+                <select id="vacancy-select" name="vacancy" required>
+                    <option value="">Выберите вакансию</option>
+                    <option value="sales-manager">Менеджер по продажам</option>
+                    <option value="python-yandex">Разработчик Python (Яндекс)</option>
+                    <option value="sales-tinkoff">Менеджер по продажам (Тинькофф)</option>
+                    <option value="python-dev">Разработчик Python</option>
+                </select>
+
+                <label for="message">Комментарий</label>
+                <textarea id="message" name="message" rows="4" placeholder="Расскажите о своём опыте"></textarea>
+
+                <button type="submit" class="btn">Отправить заявку</button>
+            </form>
+        </section>
+
+        <section id="faq" class="faq">
+            <h2>❓ Частые вопросы</h2>
+            <article class="faq-item">
+                <h3>Это законно?</h3>
+                <p>Да, это официальная партнёрская программа Тинькофф и Яндекса.</p>
+            </article>
+            <article class="faq-item">
+                <h3>Мне нужно платить?</h3>
+                <p>Нет, бонус выплачивает компания за успешное трудоустройство.</p>
+            </article>
+            <article class="faq-item">
+                <h3>Как получить бонус?</h3>
+                <ol>
+                    <li>Перейдите по реферальной ссылке</li>
+                    <li>Оформите заявку на вакансию</li>
+                    <li>Успешно пройдите собеседование</li>
+                    <li>Получите бонус после трудоустройства</li>
+                </ol>
+            </article>
+        </section>
+    </main>
 
     <footer>
-        <p>© 2024 Работа с бонусом. Неофициальный сайт.</p>
+        <p>© 2026 Работа с бонусом. Неофициальный сайт.</p>
     </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
