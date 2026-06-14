@@ -56,8 +56,3 @@
 
 - `screenshot.png` — скриншот итогового результата в браузере
 
-```bash
-# Из папки проекта
-python3 -m http.server 8080
-# Откройте http://localhost:8080
-```
